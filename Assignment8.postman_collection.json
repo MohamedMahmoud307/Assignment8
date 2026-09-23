@@ -1,0 +1,664 @@
+{
+  "info": {
+    "_postman_id": "a72e7e71-66d8-4000-9855-4f69a6c42568",
+    "name": "Assignment8",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54950563",
+    "_collection_link": "https://go.postman.co/collection/54950563-a72e7e71-66d8-4000-9855-4f69a6c42568?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Mohamed Mahmoud\",\r\n    \"email\": \"mohamed@example.com\",\r\n    \"password\": \"123456\",\r\n    \"phone\": \"01012345678\",\r\n    \"age\": 21\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/users/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "signup"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Signup",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Mohamed Mahmoud\",\r\n    \"email\": \"mohamed@example.com\",\r\n    \"password\": \"123456\",\r\n    \"phone\": \"01012345678\",\r\n    \"age\": 21\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/users/signup",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "users",
+                "signup"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "273"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"111-umDixcd9jEmOm+qeOW8vn4RjxSA\""
+            },
+            {
+              "key": "date",
+              "value": "Wed, 23 Sep 2026 22:42:42 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"User created successfully\",\n  \"user\": {\n    \"name\": \"Mohamed Mahmoud\",\n    \"email\": \"mohamed@example.com\",\n    \"password\": \"123456\",\n    \"phone\": \"01012345678\",\n    \"age\": 21,\n    \"_id\": \"6ab455e2b89955ec10ab11fe\",\n    \"createdAt\": \"2026-09-23T22:42:42.272Z\",\n    \"updatedAt\": \"2026-09-23T22:42:42.272Z\",\n    \"__v\": 0\n  }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": [
+        {
+          "name": "Login",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"mohamed@example.com\",\r\n    \"password\": \"123456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/users/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "users",
+                "login"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "264"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"108-oxUw873eSHks8JlBWxGkTUoGugs\""
+            },
+            {
+              "key": "date",
+              "value": "Wed, 23 Sep 2026 22:46:09 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Login successful\",\n  \"user\": {\n    \"_id\": \"6ab455e2b89955ec10ab11fe\",\n    \"name\": \"Mohamed Mahmoud\",\n    \"email\": \"mohamed@example.com\",\n    \"password\": \"123456\",\n    \"phone\": \"01012345678\",\n    \"age\": 21,\n    \"createdAt\": \"2026-09-23T22:42:42.272Z\",\n    \"updatedAt\": \"2026-09-23T22:42:42.272Z\",\n    \"__v\": 0\n  }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create Note",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Node.js Study\",\r\n    \"content\": \"Study Node.js today\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/notes?id=67abc1234567890abcdef123",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "notes"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "67abc1234567890abcdef123"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Create Note",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"Node.js Study\",\r\n    \"content\": \"Study Node.js today\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/notes?id=67abc1234567890abcdef123",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "notes"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "67abc1234567890abcdef123"
+                }
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "259"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"103-bnSXLy1gJ1gJkgoFv5kD5QXTlRM\""
+            },
+            {
+              "key": "date",
+              "value": "Wed, 23 Sep 2026 23:02:23 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Note created successfully\",\n  \"note\": {\n    \"title\": \"Node.js Study\",\n    \"content\": \"Study Node.js today\",\n    \"userId\": \"67abc1234567890abcdef123\",\n    \"_id\": \"6ab45a7fb89955ec10ab1202\",\n    \"createdAt\": \"2026-09-23T23:02:23.817Z\",\n    \"updatedAt\": \"2026-09-23T23:02:23.817Z\",\n    \"__v\": 0\n  }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Update",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Updated Node.js Study\",\r\n    \"content\": \"I updated my Node.js note\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/notes/6ab45a7fb89955ec10ab1202?id=67abc1234567890abcdef123",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "notes",
+            "6ab45a7fb89955ec10ab1202"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "67abc1234567890abcdef123"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Update",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"Updated Node.js Study\",\r\n    \"content\": \"I updated my Node.js note\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/notes/6ab45a7fb89955ec10ab1202?id=67abc1234567890abcdef123",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "6ab45a7fb89955ec10ab1202"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "67abc1234567890abcdef123"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "273"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"111-Dyy4nNTzjiycULeZ9HkIVaFpN34\""
+            },
+            {
+              "key": "date",
+              "value": "Wed, 23 Sep 2026 23:10:58 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Note updated successfully\",\n  \"note\": {\n    \"_id\": \"6ab45a7fb89955ec10ab1202\",\n    \"title\": \"Updated Node.js Study\",\n    \"content\": \"I updated my Node.js note\",\n    \"userId\": \"67abc1234567890abcdef123\",\n    \"createdAt\": \"2026-09-23T23:02:23.817Z\",\n    \"updatedAt\": \"2026-09-23T23:10:58.506Z\",\n    \"__v\": 0\n  }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Pagination",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/notes/paginate-sort?id=67abc1234567890abcdef123&page=1&limit=3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "notes",
+            "paginate-sort"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "67abc1234567890abcdef123"
+            },
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "3"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Pagination",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/notes/paginate-sort?id=67abc1234567890abcdef123&page=1&limit=3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "paginate-sort"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "67abc1234567890abcdef123"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "287"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"11f-ji71T05nn3WnBBFeNB+qoECxhFk\""
+            },
+            {
+              "key": "date",
+              "value": "Wed, 23 Sep 2026 23:20:24 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"page\": 1,\n  \"limit\": 3,\n  \"totalNotes\": 1,\n  \"totalPages\": 1,\n  \"notes\": [\n    {\n      \"_id\": \"6ab45a7fb89955ec10ab1202\",\n      \"title\": \"Updated Node.js Study\",\n      \"content\": \"I updated my Node.js note\",\n      \"userId\": \"67abc1234567890abcdef123\",\n      \"createdAt\": \"2026-09-23T23:02:23.817Z\",\n      \"updatedAt\": \"2026-09-23T23:10:58.506Z\",\n      \"__v\": 0\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Populate",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/notes/note-with-user?id=67abc1234567890abcdef123",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "notes",
+            "note-with-user"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "67abc1234567890abcdef123"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Populate",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/notes/note-with-user?id=67abc1234567890abcdef123",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "note-with-user"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "67abc1234567890abcdef123"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "172"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"ac-TjGMDVoRdjv8y4ks9ql/G41/J3A\""
+            },
+            {
+              "key": "date",
+              "value": "Wed, 23 Sep 2026 23:26:51 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Notes retrieved successfully\",\n  \"notes\": [\n    {\n      \"_id\": \"6ab45a7fb89955ec10ab1202\",\n      \"title\": \"Updated Node.js Study\",\n      \"userId\": null,\n      \"createdAt\": \"2026-09-23T23:02:23.817Z\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Aggregation",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/notes/aggregate?id=67abc1234567890abcdef123",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "notes",
+            "aggregate"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "67abc1234567890abcdef123"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Aggregation",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/notes/aggregate?id=67abc1234567890abcdef123",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "aggregate"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "67abc1234567890abcdef123"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "59"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"3b-m4MkxSCJmjtomBQ6MKK9S1gZje8\""
+            },
+            {
+              "key": "date",
+              "value": "Wed, 23 Sep 2026 23:30:01 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Aggregation completed successfully\",\n  \"notes\": []\n}"
+        }
+      ]
+    }
+  ]
+}
