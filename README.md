@@ -1,8 +1,3 @@
-طبعًا. ده **README احترافي لكن طبيعي وبسيط**، بصياغة طالب Backend عامل المشروع بنفسه، من غير كلام تسويقي أو جمل تبان AI-generated.
-
-انسخ الرسالة دي كاملة وحطها في `README.md`:
-
-````markdown
 # Assignment 8 - MongoDB Notes API
 
 A REST API built with Node.js, Express.js, MongoDB, and Mongoose.
@@ -475,6 +470,3 @@ node_modules/
 ## Author
 
 Mohamed Mahmoud
-
-```
-```
